@@ -1,0 +1,323 @@
+/* MAIN SETTINGS */
+
+* {
+ font-family: Rubik;
+}
+
+body {
+  margin-top: 30px;
+  background-color: lightblue;
+  font-size: 16px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+h1 {
+  color: navy;
+}
+
+a {
+  color: navy;
+  text-decoration: underline dotted;
+}
+
+li {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.strong {
+  color: navy;
+  font-weight: 900;
+
+}
+
+/* SIGNATURE OVER THE TITLE */
+.misha_iomdin {
+  width: 100%;
+  /*background-color: #FFF9C7;*/
+
+  /*
+  background-color: navy;
+  color: #FFF9C7;
+  */
+
+  background-color: #63b5cf;
+
+  border-radius: 5px;
+  padding: 2px;
+  margin-bottom: 40px;
+  margin: 0px;
+}
+
+/* TITLE */
+
+.song_title {
+  color: black;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.info_circle {
+  color: navy;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  /*border-bottom: 1px dotted black;*/
+}
+
+.song_author {
+  color: navy;
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.author_photo {
+  margin-right: 20px;
+}
+
+.song_logo {
+  margin-left: 20px;
+  width: 150px;
+  height: 150px;
+}
+
+.song_translator {
+
+}
+
+.song_info {
+  font-size: 16px;
+  border-radius: 25px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0px;
+  /*background-color: #8ac6db;*/
+  margin-bottom: 50px;
+  margin-left: 10px;
+  background-color: #63b5cf;
+}
+
+.song_info_close_button {
+  float: right;
+  margin: 5px;
+}
+
+.song_info_heb {
+  direction: rtl;
+  float:right;
+}
+
+
+.img_and_text, .two_parts {
+    display: flex;
+    justify-content: left
+}
+
+
+.content_container {
+  display: flex;
+  width: 100%;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.content_column {
+  margin-right: 50px;
+  margin-top: 25px;
+  padding: 20px;
+}
+
+/*left columnn, 1/4 width*/
+.list_of_contents { 
+  /*flex: 2;*/ /* UNCOMMENT! */
+  background-color: #63b5cf;
+  border-radius: 25px;
+  min-height: 540px;
+}
+
+/*middle columnn, 1/2 width*/
+.video_column { 
+  flex: 4; /* UNCOMMENT! */
+  width: 640px;
+  padding: 0px;
+}
+
+.main_page_container {
+  flex: 9.5;
+  padding: 0px;
+}
+
+
+/*right column, 1/4 width*/
+.contents_column { 
+  /*flex: 2;*/ /* UNCOMMENT! */
+  margin-right: 0px;
+  /*background-color: #7CB9E8;*/
+  border-radius: 25px;
+}
+
+.lyrics_heb {
+  direction: rtl;
+}
+
+.video_selection {
+  margin-left: 10px;
+  text-align: center;
+  background-color: #63b5cf;
+  border-radius: 25px;
+}
+
+.video_selection_label, .video_selection {
+  font-size: 18px;
+}
+
+.screenshot {
+  height: 100px;
+  width: 150px;
+}
+
+figure {
+  
+  flex-flow: column;
+  text-align: center;
+}
+
+/* WORD ANALYSIS ON HOVER */
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  direction: rtl;
+}
+
+.tooltip:hover {
+  text-decoration: underline dotted;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  padding: 0.25em 0.5em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25em;
+  white-space: nowrap;
+  position: absolute;
+  z-index: 1;
+  top: -150%;
+  left: -100%;
+  transition-property: visibility;
+  transition-delay: 0s;
+  direction: ltr;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  transition-delay: 0.3s;
+}
+
+.tooltiptext_analysis {
+  position: absolute
+}
+
+.tooltiptext_analysis {
+  visibility: hidden;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 10px;
+  direction: ltr;
+  bottom: 100%;
+  padding: 0.25em 0.5em;
+  white-space: nowrap;
+  right: 0%;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext_analysis {
+  visibility: visible;
+}
+
+.translation {
+  color: lightgreen;
+}
+
+.heb_td {
+  direction: rtl;
+}
+
+.transcription {
+  font-style: italic;
+  color: lightblue;
+}
+
+.word_stuff {
+  text-align: left;
+}
+
+.video {
+  max-width:100%; outline:none; border-radius: 10px;
+}
+
+.video_wrap {margin:auto; text-align:center;}
+
+
+.subtitles_wrap {
+      margin-top:5px; text-align:center; font-family:Rubik; font-size:24px;
+      min-height:30px;
+      margin: auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+.subtitles {
+  font-size: 30px;
+}
+
+.my_controls {align:center; margin-bottom:5px; text-align:center;}
+
+button {
+  min-height: 25px;
+
+  border: 1px solid #dcdcdc; /* Default border color */
+  background-color: #f5f5f5; /* Default background color */
+  color: #000; /* Default text color */
+  border-radius: 4px; /* Default border radius */
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e0e0e0; /* Slightly darker background on hover */
+  border: 1px solid #000;
+}
+
+.open_close_button {
+  background-color: #63b5cf;
+  border-radius: 10px;
+  border: 0px;
+  min-width: 40px;
+  max-width: 340px;
+  min-height: 25px;
+  vertical-align:middle;
+}
+
+.open_close_button:hover {
+  background-color: #5193a8;
+}
+
+
+.sticky_header {
+  position: sticky;
+  top: 0;
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
